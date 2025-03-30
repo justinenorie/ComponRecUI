@@ -1,12 +1,44 @@
-# React + Vite
+# ComponRecUI 🎨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ComponRecUI is my personal collection of reusable and customizable UI components built with **React** and **Tailwind CSS**. This project serves as a design system where developers can explore, modify, and integrate various pre-styled components into their own projects effortlessly.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🚀 **Pre-built Components** – Ready-to-use UI elements categorized for easy access.
+- 🎨 **Theming Support** – Dark mode and light mode compatibility with smooth transitions.
+- ⚡ **Customization** – Easily adjustable styles using Tailwind utilities.
+- 📂 **Structured Categories** – Components are grouped into categories such as **Actions, Navigation, Layouts**, and more.
+- 🛠 **Code Snippets** – Each component includes a sample code snippet for quick implementation.
 
-## Expanding the ESLint configuration
+## 🛠️ Installation
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Follow these steps to set up ComponRecUI on your local machine:
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/ComponRecUI.git
+
+# Navigate to the project directory
+cd ComponRecUI
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+
+## 📃 Contributing
+
+Contributions are welcome! If you’d like to add new components or improve existing ones, feel free to:
+
+- Fork the repository
+- Create a new branch
+- Make your changes
+- Submit a pull request
+
+Make sure your changes follow the project's code structure and best practices.
+
+## 📜 License
+
+This project is licensed under the MIT License – you’re free to use, modify, and distribute it.
