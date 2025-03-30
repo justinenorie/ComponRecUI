@@ -4,18 +4,23 @@
   --font-title: Montserrat, sans-serif;
   --font-body: Poppins, sans-serif;
 
+  /* Dark Mode Theme */
   --color-darkBg: #0f1415;
-  --color-lightBg: #eaeff0;
   --color-lightText: #e5f3f5;
-  --color-darkText: #0a181a;
+  --color-primaryDark: #32a6b3;
+  --color-secondaryDark: #197386;
+  --color-accentDark: #32c9e7;
 
-  --color-primary: #90d6e4;
-  --color-secondary: #197386;
-  --color-accent: #32c9e7;
+  /* Light Mode Theme */
+  --color-lightBg: #eaeff0;
+  --color-darkText: #0a181a;
+  --color-primaryLight: #4cc0cd;
+  --color-secondaryLight: #79d4e6;
+  --color-accentLight: #18afcd;
 }
 
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 section {
-  @apply w-full px-4 py-5 md:px-12 md:py-8 lg:px-30;
+  @apply w-full px-4 py-2 md:px-12 md:py-4;
 }
