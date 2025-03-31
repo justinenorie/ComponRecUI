@@ -1,5 +1,4 @@
 import { lazy, Suspense } from "react";
-import Loading from "./pages/Loading";
 import MainRoutes from "./routes/MainRoutes";
 
 const TopBar = lazy(() => import("./components/navigations/TopBar"));
@@ -7,7 +6,7 @@ const TopBar = lazy(() => import("./components/navigations/TopBar"));
 const App = () => {
   return (
     <div className="App">
-      <Suspense fallback={<Loading />}>
+      <Suspense fallback={<div>Loading...</div>}>
         <TopBar />
         <MainRoutes />
       </Suspense>

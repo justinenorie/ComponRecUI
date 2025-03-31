@@ -8,7 +8,7 @@ const Home = () => {
       componentName: "Action",
       description:
         "Lorem ipsum dolor sit amet, contetur. Nunc vel metus blandit, fermentum lectus sed, ultricies ante. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
-      navigateTo: "/action/button",
+      navigateTo: "/actions/button",
       img: "",
     },
     {
@@ -94,6 +94,10 @@ const Home = () => {
           ))}
         </div>
       </div>
+
+      <footer>
+        {/* TODO: Add a Footer Style here it must be in the layouts component */}
+      </footer>
     </section>
   );
 };

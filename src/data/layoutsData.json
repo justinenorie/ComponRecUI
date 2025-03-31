@@ -1,0 +1,33 @@
+{
+  "topbar": {
+    "title": "<TopBar />",
+    "description": "This is the button component containing different variants.",
+    "codeSnippet": "<Button variant='primary'>Click Me</Button>",
+    "variants": [
+      {
+        "name": "Primary",
+        "description": "A primary button with main color.",
+        "code": "<Button variant='primary'>Primary</Button>"
+      },
+      {
+        "name": "Secondary",
+        "description": "A secondary button with subtle color.",
+        "code": "<Button variant='secondary'>Secondary</Button>"
+      }
+    ],
+    "sizes": ["xs", "sm", "md", "lg", "xl"]
+  },
+  "homepage": {
+    "title": "<HomePage />",
+    "description": "This is the modal component for popups.",
+    "codeSnippet": "<Modal isOpen={true}>Hello World</Modal>",
+    "variants": [
+      {
+        "name": "Centered",
+        "description": "A centered modal.",
+        "code": "<Modal center>Centered Modal</Modal>"
+      }
+    ],
+    "sizes": ["sm", "md", "lg"]
+  }
+}
