@@ -2,7 +2,7 @@ import Typography from "../components/layouts/Typography";
 
 const Loading = () => {
   return (
-    <div className="flex h-screen items-center justify-center">
+    <div className="dark:bg-darkBg bg-lightBg flex h-screen items-center justify-center">
       <div className="relative flex flex-col items-center">
         <div className="border-primaryLight dark:border-primaryDark h-8 w-8 animate-spin rounded-full border-b-2"></div>
         <Typography
