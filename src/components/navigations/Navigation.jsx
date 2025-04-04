@@ -19,7 +19,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="h-screen w-64 border-r border-gray-300 p-4 text-white">
+    <nav className="h-screen w-full border-r border-gray-300 p-4 text-white">
       <Typography
         variant="h2"
         className="text-lightText py-5 text-xl font-semibold"
@@ -29,10 +29,6 @@ const Navigation = () => {
 
       <ul className="space-y-2">
         {categories.map((data) => {
-          const firstComponent = Object.keys(componentsData[data])[0];
-          const initialRoute = firstComponent
-            ? `/${data}/${firstComponent}`
-            : `/${data}`;
           const isExpanded = expandedCategories[data];
 
           return (

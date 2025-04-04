@@ -1,23 +1,4 @@
 {
-  "typography": {
-    "title": "<Typography />",
-    "description": "This is the different Typography",
-    "codeSnippet": "",
-    "variants": [
-      {
-        "name": "Primary",
-        "description": "A primary button with main color.",
-        "code": "<Button variant='primary'>Primary</Button>"
-      },
-      {
-        "name": "Secondary",
-        "description": "A secondary button with subtle color.",
-        "code": "<Button variant='secondary'>Secondary</Button>"
-      }
-    ],
-    "sizes": ["xs", "sm", "md", "lg", "xl"]
-  },
-
   "topbar": {
     "title": "<TopBar />",
     "description": "This is the button component containing different variants.",
