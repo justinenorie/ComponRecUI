@@ -1,41 +1,44 @@
-# Website
+# ComponRecUI 🎨
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+ComponRecUI is my personal collection of reusable and customizable UI components built with **React** and **Tailwind CSS**. This project serves as a design system where developers can explore, modify, and integrate various pre-styled components into their own projects effortlessly.
 
-### Installation
+## ✨ Features
 
-```
-$ yarn
-```
+- 🚀 **Pre-built Components** – Ready-to-use UI elements categorized for easy access.
+- 🎨 **Theming Support** – Dark mode and light mode compatibility with smooth transitions.
+- ⚡ **Customization** – Easily adjustable styles using Tailwind utilities.
+- 📂 **Structured Categories** – Components are grouped into categories such as **Actions, Navigation, Layouts**, and more.
+- 🛠 **Code Snippets** – Each component includes a sample code snippet for quick implementation.
 
-### Local Development
+## 🛠️ Installation
 
-```
-$ yarn start
-```
+Follow these steps to set up ComponRecUI on your local machine:
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+```bash
+# Clone the repository
+git clone https://github.com/your-username/ComponRecUI.git
 
-### Build
+# Navigate to the project directory
+cd ComponRecUI
 
-```
-$ yarn build
-```
+# Install dependencies
+npm install
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
+# Start the development server
+npm run dev
 ```
 
-Not using SSH:
+## 📃 Contributing
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
+Contributions are welcome! If you’d like to add new components or improve existing ones, feel free to:
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+- Fork the repository
+- Create a new branch
+- Make your changes
+- Submit a pull request
+
+Make sure your changes follow the project's code structure and best practices.
+
+## 📜 License
+
+This project is licensed under the MIT License – you’re free to use, modify, and distribute it.
