@@ -4,67 +4,61 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from "prism-react-renderer";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: "ComponRecUI",
+  tagline: "Dinosaurs are cool",
+  favicon: "img/ComponRecUI.ico",
+  plugins: [
+    "./src/plugins/tailwind-config.js",
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        hashed: true,
+      },
+    ],
+  ],
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: "https://your-docusaurus-site.example.com", //TODO: Change this with production site
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: "ComponRecUI", // Usually your GitHub org/user name.
+  projectName: "ComponRecUI", // Usually your repo name.
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
+          sidebarPath: "./sidebars.js",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: "https://github.com/justinenorie/ComponRecUI/",
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        blog: false,
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       }),
     ],
@@ -74,72 +68,67 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: "img/docusaurus-social-card.jpg",
       navbar: {
-        title: 'My Site',
+        title: "ComponRecUI",
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: "ComponRecUI Logo",
+          src: "img/ComponRecUI.svg",
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
+            type: "docSidebar",
+            sidebarId: "tutorialSidebar",
+            position: "right",
+            label: "Tutorial",
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
+            href: "https://github.com/justinenorie/ComponRecUI",
+            position: "right",
+            label: "Github",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
+        logo: {
+          alt: "ComponRecUI Logo",
+          src: "img/ComponRecUI.svg",
+          width: 45,
+          height: 45,
+        },
+        // THere should be ComponRecUI here with description... And the icon is in the right left side
         links: [
           {
-            title: 'Docs',
+            title: "Components Category",
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: "Actions",
+                to: "/docs/intro",
+              },
+              {
+                label: "Layouts",
+                to: "/docs/intro",
               },
             ],
           },
+          // TODO: This app does not require a blog.
           {
-            title: 'Community',
+            title: "Socials",
             items: [
+              // {
+              //   label: "Blog",
+              //   to: "/blog",
+              // },
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: "GitHub",
+                href: "https://github.com/facebook/docusaurus",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        // TODO: Add Custom HTML styling here for footer.
+        copyright: `Copyright © ${new Date().getFullYear()} ComponRecUI. Created by Justine Norie. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
