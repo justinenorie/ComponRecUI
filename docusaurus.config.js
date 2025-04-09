@@ -11,10 +11,12 @@ import { themes as prismThemes } from "prism-react-renderer";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "ComponRecUI",
-  tagline: "Dinosaurs are cool",
+  tagline:
+    " Every collection of ComponRecUI components so far that is made with React and TailwindCSS only.",
   favicon: "img/ComponRecUI.ico",
   plugins: [
     "./src/plugins/tailwind-config.js",
+    require.resolve("./src/plugins/docs-metadata-plugin"),
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
       {
@@ -80,7 +82,7 @@ const config = {
             type: "docSidebar",
             sidebarId: "tutorialSidebar",
             position: "right",
-            label: "Tutorial",
+            label: "Components",
           },
           {
             href: "https://github.com/justinenorie/ComponRecUI",
